@@ -1,0 +1,91 @@
+
+{% extends "main_page/header.html" %}
+
+{% block content %}
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="jumbotron">
+			<h1 class="display-3">Analytics, World!</h1>
+				<p class="lead">Welcome to the world of Machine Learning & Artificial Intelligence</p>
+			<hr class="my-4">
+				<p class="lead text-muted">Look at the <i>Retail</i> world through the prism of <i>advanced machine learning models</i>, which will help learn about the products we sell, customers who buy and the channels we sell-through</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+				</p>
+		</div>
+      </section>
+	  <section>
+		<div class="album py-5 bg-light">
+			<div class="container">
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" alt="Card image cap" src="/static/main_page/img/Market_Basket_Analysis.jpg" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-text">Association Rule-Based Basket analysis helps understand the relationship between various items our customers buy</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<a class="btn btn-sm btn-outline-secondary" href="http://127.0.0.1:8000/association_rule" role="button">Run the Model</a>                      
+									<button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+								</div>
+								<small class="text-muted"><i>Basket Analysis</i></small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" alt="Card image cap" src="/static/main_page/img/Sales Predictor.jpg" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-text">Predict Sales based on various levers that we control (promotions, store labor) and that we don't (holidays, seasonality)</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<a class="btn btn-sm btn-outline-secondary" href="http://127.0.0.1:8000/sales_predictor" role="button">Run the Model</a> 
+									<button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+								</div>
+								<small class="text-muted"><i>Sales Predictor</i></small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4 box-shadow">
+						<img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" alt="Card image cap" src="/static/main_page/img/Sentiment_Analysis.jpg" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-text">Understand the pulse of our customers by scraping social media feed such as instagram, twitter, facebook etc.</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<a class="btn btn-sm btn-outline-secondary" href="http://127.0.0.1:8000/sentiment_analysis" role="button">Run the Model</a> 
+									<button type="button" class="btn btn-sm btn-outline-secondary">Learn More</button>
+								</div>
+								<small class="text-muted"><i>Find Sentiment</i></small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>All models are constantly updated, so the results may vary based on the version it is on</p>
+        <p>New to running Machine Learning model? <a href="https://en.wikipedia.org/wiki/Machine_learning">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+
+{% endblock %}

@@ -1,0 +1,16 @@
+
+{% extends "main_page/header.html" %}
+
+{% block content %}
+
+	<div class="container">
+		<h1>Association Rule</h1>
+		<form method="post">
+			{% csrf_token %}
+			{{form.as_p}}
+			<button type="submit">Submit</button>
+		</form>
+		<h2>{{Dept}}</h2>
+		<h2>{{Class}}</h2>
+	</div>
+{% endblock %}
